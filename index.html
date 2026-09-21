@@ -53,6 +53,12 @@ h1{font-size:1.85rem;font-weight:800;letter-spacing:-.02em;margin:0 0 6px}
 h2{font-size:1.08rem;font-weight:700;margin:0 0 2px;letter-spacing:-.01em;color:var(--ink)}
 .kicker{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 4px}
 p.lead{color:var(--muted);margin:0;font-size:.94rem;max-width:70ch}
+.titlerow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+#refresh-btn{font:inherit;font-size:.84rem;font-weight:700;color:var(--surface);background:var(--accent);
+  border:none;border-radius:20px;padding:9px 18px;cursor:pointer;white-space:nowrap;
+  transition:opacity .15s}
+#refresh-btn:hover{opacity:.88}
+#refresh-btn:disabled{opacity:.55;cursor:default}
 .note{color:var(--muted);font-size:.83rem;margin:2px 0 18px;max-width:70ch}
 
 /* sticky jump nav */
@@ -143,8 +149,12 @@ a{color:var(--accent)}
 <div class="wrap">
   <div class="hero">
     <p class="kicker">IT Support &middot; Zibber</p>
-    <h1>IT Support dienstverlening</h1>
+    <div class="titlerow">
+      <h1>IT Support dienstverlening</h1>
+      <button id="refresh-btn" type="button">Ververs nu</button>
+    </div>
     <p class="lead" id="lead"></p>
+    <p class="note" id="refresh-status" style="display:none;margin:6px 0 0"></p>
     <div class="figs" id="figs"></div>
   </div>
 
@@ -6139,6 +6149,37 @@ function add(p,tag,attrs,text){const n=document.createElementNS(SVGNS,tag);
 /* var(--token) i.p.v. een momentopname met getComputedStyle: leest altijd de
    actuele cascade, geen race met het moment waarop de pagina kleurmodus bepaalt. */
 const css = v => `var(${v})`;
+
+/* ververs-knop: roept de achtergrondfunctie aan die een commit pusht die op
+   zijn beurt de Claude cloud-routine triggert (Jira ophalen, bouwen, publiceren) */
+(function(){
+  const REFRESH_URL = 'https://it-dashboard-refresh.eva-vandelaar.workers.dev';
+  const btn = document.getElementById('refresh-btn');
+  const status = document.getElementById('refresh-status');
+  const toon = (tekst) => { status.textContent = tekst; status.style.display = 'block'; };
+  btn.addEventListener('click', async () => {
+    btn.disabled = true;
+    const oud = btn.textContent;
+    btn.textContent = 'Bezig...';
+    try {
+      const resp = await fetch(REFRESH_URL, { method: 'POST' });
+      const data = await resp.json().catch(() => ({}));
+      if (resp.status === 200 && data.status === 'started') {
+        toon('Verversen gestart. Dit duurt ongeveer 2 tot 3 minuten — herlaad deze pagina straks.');
+      } else if (resp.status === 429 && data.status === 'cooldown') {
+        const min = Math.ceil((data.secondsRemaining || 0) / 60);
+        toon(`Net al ververst. Probeer het over ongeveer ${min} ${min === 1 ? 'minuut' : 'minuten'} opnieuw.`);
+      } else {
+        toon('Kon de ververing niet starten. Probeer het straks opnieuw.');
+      }
+    } catch (e) {
+      toon('Kon de achtergrondfunctie niet bereiken. Controleer je verbinding en probeer opnieuw.');
+    } finally {
+      btn.textContent = oud;
+      btn.disabled = false;
+    }
+  });
+})();
 
 /* jump-nav */
 const SECTIES = [
