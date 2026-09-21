@@ -1,0 +1,11 @@
+name: Ververs dashboard
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Signaal voor de Claude cloud-routine
+        run: echo "Dispatch ontvangen, de Claude cloud-routine pikt dit event op en doet het echte werk (Jira ophalen, dashboard bouwen, publiceren)."
