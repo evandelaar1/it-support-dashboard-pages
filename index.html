@@ -222,7 +222,7 @@ a{color:var(--accent)}
 </div>
 
 <script id="payload" type="application/json">{
- "gegenereerd": "2026-09-30T05:03:54",
+ "gegenereerd": "2026-09-30T20:55:51",
  "bron": "out/issues.json",
  "jira_url": "https://zien24.atlassian.net",
  "regels": {
@@ -233,15 +233,15 @@ a{color:var(--accent)}
   "werkdag": "8:00-18:00, ma t/m vr"
  },
  "totalen": {
-  "tickets": 191,
+  "tickets": 193,
   "eerste": "2026-07-13",
-  "laatste": "2026-09-29",
+  "laatste": "2026-09-30",
   "weken": 12,
-  "open": 17,
-  "opgelost": 174,
-  "doorlooptijd_mediaan": 9.2,
-  "doorlooptijd_p90": 71.2,
-  "doorlooptijd_n": 174,
+  "open": 13,
+  "opgelost": 180,
+  "doorlooptijd_mediaan": 9.3,
+  "doorlooptijd_p90": 69.7,
+  "doorlooptijd_n": 180,
   "eerste_reactie_mediaan": null,
   "eerste_reactie_p90": null,
   "eerste_reactie_n": 0,
@@ -249,9 +249,9 @@ a{color:var(--accent)}
   "niet_reproduceerbaar_aandeel": 17
  },
  "band": {
-  "gemiddelde": 15.9,
-  "onder": 0.0,
-  "boven": 31.8,
+  "gemiddelde": 16.1,
+  "onder": 0.7,
+  "boven": 31.5,
   "weken": 12
  },
  "per_week": [
@@ -543,10 +543,10 @@ a{color:var(--accent)}
   {
    "week": "2026-W39",
    "instroom": 15,
-   "opgelost": 8,
+   "opgelost": 11,
    "gemiddelde_4w": 23.2,
-   "doorlooptijd_mediaan": null,
-   "doorlooptijd_p90": null,
+   "doorlooptijd_mediaan": 23.4,
+   "doorlooptijd_p90": 49.3,
    "doorlooptijd_punten": [
     1.17,
     2.72,
@@ -554,21 +554,27 @@ a{color:var(--accent)}
     10.72,
     22.85,
     23.35,
+    24.42,
     40.53,
-    40.88
+    40.88,
+    49.28,
+    57.73
    ],
    "eerste_reactie_mediaan": null,
    "blokkerend": 2
   },
   {
    "week": "2026-W40",
-   "instroom": 3,
-   "opgelost": 1,
+   "instroom": 5,
+   "opgelost": 4,
    "gemiddelde_4w": 20.5,
    "doorlooptijd_mediaan": null,
    "doorlooptijd_p90": null,
    "doorlooptijd_punten": [
-    0.2
+    0.2,
+    2.93,
+    8.62,
+    17.57
    ],
    "eerste_reactie_mediaan": null,
    "blokkerend": 1
@@ -614,6 +620,17 @@ a{color:var(--accent)}
    "trend": "daling"
   },
   {
+   "categorie": "Funda",
+   "per_periode": [
+    3,
+    6,
+    5
+   ],
+   "totaal": 14,
+   "verschil": -1,
+   "trend": "stabiel"
+  },
+  {
    "categorie": "Pricelist",
    "per_periode": [
     3,
@@ -623,17 +640,6 @@ a{color:var(--accent)}
    "totaal": 14,
    "verschil": 5,
    "trend": "stijging"
-  },
-  {
-   "categorie": "Funda",
-   "per_periode": [
-    3,
-    6,
-    4
-   ],
-   "totaal": 13,
-   "verschil": -2,
-   "trend": "stabiel"
   },
   {
    "categorie": "Notifications & E-mails",
@@ -779,6 +785,17 @@ a{color:var(--accent)}
    "trend": "stabiel"
   },
   {
+   "categorie": "Niet geclassificeerd",
+   "per_periode": [
+    0,
+    1,
+    2
+   ],
+   "totaal": 3,
+   "verschil": 1,
+   "trend": "stabiel"
+  },
+  {
    "categorie": "Partner connections",
    "per_periode": [
     2,
@@ -788,21 +805,10 @@ a{color:var(--accent)}
    "totaal": 3,
    "verschil": 1,
    "trend": "stabiel"
-  },
-  {
-   "categorie": "Niet geclassificeerd",
-   "per_periode": [
-    0,
-    1,
-    1
-   ],
-   "totaal": 2,
-   "verschil": 0,
-   "trend": "stabiel"
   }
  ],
  "prioriteit": {
-  "Medium": 178,
+  "Medium": 180,
   "Highest": 6,
   "High": 5,
   "Low": 2
@@ -900,7 +906,7 @@ a{color:var(--accent)}
    "week": "2026-W40",
    "Highest": 0,
    "High": 0,
-   "Medium": 3,
+   "Medium": 5,
    "Low": 0,
    "Lowest": 0
   }
@@ -930,11 +936,11 @@ a{color:var(--accent)}
     "cellen": [
      1,
      1,
-     63,
+     65,
      0,
      0
     ],
-    "totaal": 65
+    "totaal": 67
    },
    {
     "impact": "Minor inconvenience",
@@ -961,27 +967,26 @@ a{color:var(--accent)}
   ]
  },
  "status": {
-  "Pending bugfix": 8,
-  "In Progress": 5,
-  "To Do": 3,
+  "Pending bugfix": 11,
+  "To Do": 1,
   "Pending customer": 1
  },
  "resolutie": {
-  "Done": 139,
+  "Done": 144,
   "Cannot Reproduce": 30,
-  "Won't Do": 3,
+  "Won't Do": 4,
   "Duplicate": 2
  },
  "type_verzoek": {
-  "Something is wrong in a system": 118,
+  "Something is wrong in a system": 119,
   "Niet ingevuld": 25,
-  "I have a question": 19,
+  "I have a question": 20,
   "I want to request a new feature": 16,
   "I cannot access something": 12,
   "I want to request a new feature , Something is wrong in a system": 1
  },
  "afdeling": {
-  "Customer Service": 121,
+  "Customer Service": 123,
   "IT": 19,
   "Planning": 19,
   "Field Services": 11,
@@ -991,9 +996,9 @@ a{color:var(--accent)}
   "Team Manager Belgium": 2
  },
  "melders": {
-  "joyce": 26,
+  "joyce": 27,
   "maik": 22,
-  "sanne": 18,
+  "sanne": 19,
   "baoying": 14,
   "nora": 13,
   "emma": 12,
@@ -1028,7 +1033,7 @@ a{color:var(--accent)}
    "summary": "Funda 2.0 koppeling niet zichtbaar in SF",
    "status": "Pending bugfix",
    "categorie": "Funda",
-   "leeftijd_dagen": 36,
+   "leeftijd_dagen": 37,
    "afdeling": "Customer Service"
   },
   {
@@ -1036,7 +1041,7 @@ a{color:var(--accent)}
    "summary": "Geen threadcode RT",
    "status": "Pending bugfix",
    "categorie": "BrightRiver",
-   "leeftijd_dagen": 35,
+   "leeftijd_dagen": 36,
    "afdeling": "Customer Service"
   },
   {
@@ -1044,7 +1049,7 @@ a{color:var(--accent)}
    "summary": "geen BOG vermeldling bij Floorplanner RT ticket",
    "status": "Pending bugfix",
    "categorie": "Floorplanner",
-   "leeftijd_dagen": 35,
+   "leeftijd_dagen": 36,
    "afdeling": "Customer Service"
   },
   {
@@ -1052,7 +1057,7 @@ a{color:var(--accent)}
    "summary": "Deactiveren account",
    "status": "Pending bugfix",
    "categorie": "Salesforce",
-   "leeftijd_dagen": 34,
+   "leeftijd_dagen": 35,
    "afdeling": "Customer Service"
   },
   {
@@ -1084,15 +1089,15 @@ a{color:var(--accent)}
    "summary": "Teer Makelaars: Ze zien product Makelaarspresentatie aan de rechtse kant staan in Stap 2. Terwijl ze het pakket Teer met Makelaar al besteld hebben.",
    "status": "Pending bugfix",
    "categorie": "Pricelist",
-   "leeftijd_dagen": 11,
+   "leeftijd_dagen": 12,
    "afdeling": "Customer Service"
   },
   {
    "key": "IT-187",
    "summary": "Extra product in pakket (video)",
-   "status": "In Progress",
+   "status": "Pending bugfix",
    "categorie": "Zibber Zone",
-   "leeftijd_dagen": 8,
+   "leeftijd_dagen": 9,
    "afdeling": "Customer Service"
   },
   {
@@ -1100,96 +1105,64 @@ a{color:var(--accent)}
    "summary": "Verkeerde (onverklaarbare) prijzen bij stap 2 en stap 4",
    "status": "Pending bugfix",
    "categorie": "Pricelist",
-   "leeftijd_dagen": 7,
+   "leeftijd_dagen": 8,
    "afdeling": "Sales"
   },
   {
    "key": "IT-191",
    "summary": "1680602-terugkomafspraak nodig doorspushen",
-   "status": "In Progress",
+   "status": "Pending bugfix",
    "categorie": "Other - Products",
-   "leeftijd_dagen": 7,
+   "leeftijd_dagen": 8,
    "afdeling": "Customer Service"
-  },
-  {
-   "key": "IT-195",
-   "summary": "Meldingen bij belangrijke orders",
-   "status": "In Progress",
-   "categorie": "Feature request",
-   "leeftijd_dagen": 6,
-   "afdeling": "Planning"
-  },
-  {
-   "key": "IT-196",
-   "summary": "Meldingen in slackkanaal voor bepaalde orders",
-   "status": "In Progress",
-   "categorie": "Feature request",
-   "leeftijd_dagen": 6,
-   "afdeling": "Planning"
   },
   {
    "key": "IT-199",
    "summary": "CAD_NEN opleveringen lijken niet door te komen",
    "status": "Pending customer",
    "categorie": "Other - Products",
-   "leeftijd_dagen": 5,
+   "leeftijd_dagen": 6,
    "afdeling": "Customer Service"
   },
   {
-   "key": "IT-201",
-   "summary": "Account aanmaken",
-   "status": "In Progress",
-   "categorie": "Salesforce",
-   "leeftijd_dagen": 3,
+   "key": "IT-206",
+   "summary": "360 komt niet door bij funda",
+   "status": "Pending bugfix",
+   "categorie": "Funda",
+   "leeftijd_dagen": 0,
    "afdeling": "Customer Service"
-  },
-  {
-   "key": "IT-202",
-   "summary": "Cross-project zichtbaarheid van gelinkte tickets inschakelen tussen Product/Marketing en Dev/OBI/Support",
-   "status": "To Do",
-   "categorie": "Feature request",
-   "leeftijd_dagen": 0,
-   "afdeling": "Field Services"
-  },
-  {
-   "key": "IT-203",
-   "summary": "Probleem Dewaele Vastgoed",
-   "status": "To Do",
-   "categorie": "Partner connections",
-   "leeftijd_dagen": 0,
-   "afdeling": "Sales"
   }
  ],
  "veldhistorie": {
   "categorie": {
    "vanaf": "2026-W29",
-   "gevuld": 189,
-   "van": 191
+   "gevuld": 190,
+   "van": 193
   },
   "impact": {
    "vanaf": "2026-W30",
-   "gevuld": 155,
-   "van": 191
+   "gevuld": 157,
+   "van": 193
   },
   "markt": {
    "vanaf": "2026-W38",
-   "gevuld": 40,
-   "van": 191
+   "gevuld": 42,
+   "van": 193
   },
   "frequentie": {
    "vanaf": "2026-W38",
-   "gevuld": 40,
-   "van": 191
+   "gevuld": 42,
+   "van": 193
   },
   "systeem_melder": {
    "vanaf": "2026-W38",
-   "gevuld": 41,
-   "van": 191
+   "gevuld": 43,
+   "van": 193
   },
   "referentie": {
    "vanaf": "2026-W38",
-   "gevuld": 29,
-   "van": 191
+   "gevuld": 31,
+   "van": 193
   }
  },
  "tickets": [
@@ -3460,7 +3433,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P2",
-   "leeftijd_dagen": 36
+   "leeftijd_dagen": 37
   },
   {
    "key": "IT-93",
@@ -3601,7 +3574,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P2",
-   "leeftijd_dagen": 35
+   "leeftijd_dagen": 36
   },
   {
    "key": "IT-98",
@@ -3658,7 +3631,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P2",
-   "leeftijd_dagen": 35
+   "leeftijd_dagen": 36
   },
   {
    "key": "IT-100",
@@ -3939,7 +3912,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P2",
-   "leeftijd_dagen": 34
+   "leeftijd_dagen": 35
   },
   {
    "key": "IT-110",
@@ -5931,7 +5904,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 11
+   "leeftijd_dagen": 12
   },
   {
    "key": "IT-183",
@@ -6051,7 +6024,7 @@ a{color:var(--accent)}
    "created": "2026-09-21T09:09:00",
    "resolved": null,
    "week": "2026-W39",
-   "status": "In Progress",
+   "status": "Pending bugfix",
    "status_categorie": "In Progress",
    "resolutie": null,
    "prioriteit": "Medium",
@@ -6072,7 +6045,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 8
+   "leeftijd_dagen": 9
   },
   {
    "key": "IT-188",
@@ -6129,7 +6102,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 7
+   "leeftijd_dagen": 8
   },
   {
    "key": "IT-190",
@@ -6165,7 +6138,7 @@ a{color:var(--accent)}
    "created": "2026-09-22T09:04:00",
    "resolved": null,
    "week": "2026-W39",
-   "status": "In Progress",
+   "status": "Pending bugfix",
    "status_categorie": "In Progress",
    "resolutie": null,
    "prioriteit": "Medium",
@@ -6186,7 +6159,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 7
+   "leeftijd_dagen": 8
   },
   {
    "key": "IT-192",
@@ -6276,11 +6249,11 @@ a{color:var(--accent)}
    "key": "IT-195",
    "summary": "Meldingen bij belangrijke orders",
    "created": "2026-09-23T08:43:00",
-   "resolved": null,
+   "resolved": "2026-09-30T16:27:00",
    "week": "2026-W39",
-   "status": "In Progress",
-   "status_categorie": "In Progress",
-   "resolutie": null,
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
    "prioriteit": "Medium",
    "type_verzoek": "I want to request a new feature",
    "categorie": "Feature request",
@@ -6295,21 +6268,20 @@ a{color:var(--accent)}
    "melder_ruw": "Jill Bruyninckx",
    "melder": "jill",
    "meerdere_melders": false,
-   "doorlooptijd_klok_u": null,
-   "doorlooptijd_werk_u": null,
+   "doorlooptijd_klok_u": 175.73,
+   "doorlooptijd_werk_u": 57.73,
    "eerste_reactie_werk_u": null,
-   "periode": "P3",
-   "leeftijd_dagen": 6
+   "periode": "P3"
   },
   {
    "key": "IT-196",
    "summary": "Meldingen in slackkanaal voor bepaalde orders",
    "created": "2026-09-23T09:48:00",
-   "resolved": null,
+   "resolved": "2026-09-30T09:05:00",
    "week": "2026-W39",
-   "status": "In Progress",
-   "status_categorie": "In Progress",
-   "resolutie": null,
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
    "prioriteit": "Medium",
    "type_verzoek": "I want to request a new feature",
    "categorie": "Feature request",
@@ -6324,11 +6296,10 @@ a{color:var(--accent)}
    "melder_ruw": "Jill Bruyninckx",
    "melder": "jill",
    "meerdere_melders": false,
-   "doorlooptijd_klok_u": null,
-   "doorlooptijd_werk_u": null,
+   "doorlooptijd_klok_u": 167.28,
+   "doorlooptijd_werk_u": 49.28,
    "eerste_reactie_werk_u": null,
-   "periode": "P3",
-   "leeftijd_dagen": 6
+   "periode": "P3"
   },
   {
    "key": "IT-197",
@@ -6413,7 +6384,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 5
+   "leeftijd_dagen": 6
   },
   {
    "key": "IT-200",
@@ -6447,11 +6418,11 @@ a{color:var(--accent)}
    "key": "IT-201",
    "summary": "Account aanmaken",
    "created": "2026-09-25T14:40:00",
-   "resolved": null,
+   "resolved": "2026-09-30T09:05:00",
    "week": "2026-W39",
-   "status": "In Progress",
-   "status_categorie": "In Progress",
-   "resolutie": null,
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
    "prioriteit": "Medium",
    "type_verzoek": "I have a question",
    "categorie": "Salesforce",
@@ -6466,21 +6437,20 @@ a{color:var(--accent)}
    "melder_ruw": "Nora",
    "melder": "nora",
    "meerdere_melders": false,
-   "doorlooptijd_klok_u": null,
-   "doorlooptijd_werk_u": null,
+   "doorlooptijd_klok_u": 114.42,
+   "doorlooptijd_werk_u": 24.42,
    "eerste_reactie_werk_u": null,
-   "periode": "P3",
-   "leeftijd_dagen": 3
+   "periode": "P3"
   },
   {
    "key": "IT-202",
    "summary": "Cross-project zichtbaarheid van gelinkte tickets inschakelen tussen Product/Marketing en Dev/OBI/Support",
    "created": "2026-09-28T16:23:00",
-   "resolved": null,
+   "resolved": "2026-09-30T13:57:00",
    "week": "2026-W40",
-   "status": "To Do",
-   "status_categorie": "To Do",
-   "resolutie": null,
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
    "prioriteit": "Medium",
    "type_verzoek": "I have a question",
    "categorie": "Feature request",
@@ -6495,21 +6465,20 @@ a{color:var(--accent)}
    "melder_ruw": "Ruwan Silva",
    "melder": "ruwan",
    "meerdere_melders": false,
-   "doorlooptijd_klok_u": null,
-   "doorlooptijd_werk_u": null,
+   "doorlooptijd_klok_u": 45.57,
+   "doorlooptijd_werk_u": 17.57,
    "eerste_reactie_werk_u": null,
-   "periode": "P3",
-   "leeftijd_dagen": 0
+   "periode": "P3"
   },
   {
    "key": "IT-203",
    "summary": "Probleem Dewaele Vastgoed",
    "created": "2026-09-29T13:20:00",
-   "resolved": null,
+   "resolved": "2026-09-30T11:57:00",
    "week": "2026-W40",
-   "status": "To Do",
-   "status_categorie": "To Do",
-   "resolutie": null,
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Won't Do",
    "prioriteit": "Medium",
    "type_verzoek": "Something is wrong in a system",
    "categorie": "Partner connections",
@@ -6524,11 +6493,10 @@ a{color:var(--accent)}
    "melder_ruw": "Dieter Dengler",
    "melder": "dieter",
    "meerdere_melders": false,
-   "doorlooptijd_klok_u": null,
-   "doorlooptijd_werk_u": null,
+   "doorlooptijd_klok_u": 22.62,
+   "doorlooptijd_werk_u": 8.62,
    "eerste_reactie_werk_u": null,
-   "periode": "P3",
-   "leeftijd_dagen": 0
+   "periode": "P3"
   },
   {
    "key": "IT-204",
@@ -6557,6 +6525,63 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": 0.2,
    "eerste_reactie_werk_u": null,
    "periode": "P3"
+  },
+  {
+   "key": "IT-205",
+   "summary": "Van Overbeek YouTube",
+   "created": "2026-09-30T08:57:00",
+   "resolved": "2026-09-30T11:53:00",
+   "week": "2026-W40",
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
+   "prioriteit": "Medium",
+   "type_verzoek": "I have a question",
+   "categorie": "Niet geclassificeerd",
+   "systeem_melder": "I don't know",
+   "impact": "Hindered, workaround available",
+   "frequentie": "First time I see this",
+   "markt": "Netherlands",
+   "referentie": "Van Overbeek algemeen",
+   "behandelaar": null,
+   "account": "Support Zibber NL",
+   "afdeling": "Customer Service",
+   "melder_ruw": "Sanne van Kessel",
+   "melder": "sanne",
+   "meerdere_melders": false,
+   "doorlooptijd_klok_u": 2.93,
+   "doorlooptijd_werk_u": 2.93,
+   "eerste_reactie_werk_u": null,
+   "periode": "P3"
+  },
+  {
+   "key": "IT-206",
+   "summary": "360 komt niet door bij funda",
+   "created": "2026-09-30T11:49:00",
+   "resolved": null,
+   "week": "2026-W40",
+   "status": "Pending bugfix",
+   "status_categorie": "In Progress",
+   "resolutie": null,
+   "prioriteit": "Medium",
+   "type_verzoek": "Something is wrong in a system",
+   "categorie": "Funda",
+   "systeem_melder": "Partner Integration - Funda",
+   "impact": "Hindered, workaround available",
+   "frequentie": "First time I see this",
+   "markt": "Netherlands",
+   "referentie": "1683693",
+   "behandelaar": "Eva van de Laar",
+   "account": "Support Zibber NL",
+   "afdeling": "Customer Service",
+   "melder_ruw": "Joyce",
+   "melder": "joyce",
+   "meerdere_melders": false,
+   "doorlooptijd_klok_u": null,
+   "doorlooptijd_werk_u": null,
+   "eerste_reactie_werk_u": null,
+   "periode": "P3",
+   "leeftijd_dagen": 0
   }
  ]
 }</script>
