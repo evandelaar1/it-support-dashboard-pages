@@ -222,7 +222,7 @@ a{color:var(--accent)}
 </div>
 
 <script id="payload" type="application/json">{
- "gegenereerd": "2026-10-19T05:03:25",
+ "gegenereerd": "2026-10-20T05:03:37",
  "bron": "out/issues.json",
  "jira_url": "https://zien24.atlassian.net",
  "regels": {
@@ -233,15 +233,15 @@ a{color:var(--accent)}
   "werkdag": "8:00-18:00, ma t/m vr"
  },
  "totalen": {
-  "tickets": 219,
+  "tickets": 220,
   "eerste": "2026-07-13",
-  "laatste": "2026-10-16",
-  "weken": 14,
-  "open": 20,
-  "opgelost": 199,
-  "doorlooptijd_mediaan": 10.4,
-  "doorlooptijd_p90": 83.0,
-  "doorlooptijd_n": 199,
+  "laatste": "2026-10-19",
+  "weken": 15,
+  "open": 17,
+  "opgelost": 203,
+  "doorlooptijd_mediaan": 10.6,
+  "doorlooptijd_p90": 93.6,
+  "doorlooptijd_n": 203,
   "eerste_reactie_mediaan": null,
   "eerste_reactie_p90": null,
   "eerste_reactie_n": 0,
@@ -249,10 +249,10 @@ a{color:var(--accent)}
   "niet_reproduceerbaar_aandeel": 15
  },
  "band": {
-  "gemiddelde": 15.6,
-  "onder": 1.2,
-  "boven": 30.1,
-  "weken": 14
+  "gemiddelde": 14.7,
+  "onder": 0,
+  "boven": 30.4,
+  "weken": 15
  },
  "per_week": [
   {
@@ -410,10 +410,10 @@ a{color:var(--accent)}
   {
    "week": "2026-W35",
    "instroom": 26,
-   "opgelost": 24,
+   "opgelost": 26,
    "gemiddelde_4w": 16.5,
-   "doorlooptijd_mediaan": 24.5,
-   "doorlooptijd_p90": 104.1,
+   "doorlooptijd_mediaan": 28.1,
+   "doorlooptijd_p90": 368.1,
    "doorlooptijd_punten": [
     0.55,
     0.77,
@@ -438,7 +438,9 @@ a{color:var(--accent)}
     72.0,
     117.82,
     358.92,
-    377.3
+    377.3,
+    392.18,
+    396.52
    ],
    "eerste_reactie_mediaan": null,
    "blokkerend": 4
@@ -607,7 +609,7 @@ a{color:var(--accent)}
   {
    "week": "2026-W42",
    "instroom": 16,
-   "opgelost": 6,
+   "opgelost": 7,
    "gemiddelde_4w": 14.8,
    "doorlooptijd_mediaan": null,
    "doorlooptijd_p90": null,
@@ -617,10 +619,24 @@ a{color:var(--accent)}
     4.73,
     10.43,
     10.85,
-    24.12
+    24.12,
+    25.82
    ],
    "eerste_reactie_mediaan": null,
    "blokkerend": 5
+  },
+  {
+   "week": "2026-W43",
+   "instroom": 1,
+   "opgelost": 1,
+   "gemiddelde_4w": 11.5,
+   "doorlooptijd_mediaan": null,
+   "doorlooptijd_p90": null,
+   "doorlooptijd_punten": [
+    1.83
+   ],
+   "eerste_reactie_mediaan": null,
+   "blokkerend": 1
   }
  ],
  "periodes": [
@@ -630,6 +646,18 @@ a{color:var(--accent)}
   "P4"
  ],
  "categorie_per_periode": [
+  {
+   "categorie": "Niet geclassificeerd",
+   "per_periode": [
+    0,
+    1,
+    0,
+    24
+   ],
+   "totaal": 25,
+   "verschil": 24,
+   "trend": "stijging"
+  },
   {
    "categorie": "Salesforce",
    "per_periode": [
@@ -641,18 +669,6 @@ a{color:var(--accent)}
    "totaal": 25,
    "verschil": -11,
    "trend": "daling"
-  },
-  {
-   "categorie": "Niet geclassificeerd",
-   "per_periode": [
-    0,
-    1,
-    0,
-    23
-   ],
-   "totaal": 24,
-   "verschil": 23,
-   "trend": "stijging"
   },
   {
    "categorie": "Zibber Zone",
@@ -872,10 +888,10 @@ a{color:var(--accent)}
   }
  ],
  "prioriteit": {
-  "Medium": 205,
+  "Medium": 207,
   "High": 6,
   "Highest": 6,
-  "Low": 2
+  "Low": 1
  },
  "prioriteit_per_week": [
   {
@@ -946,8 +962,8 @@ a{color:var(--accent)}
    "week": "2026-W37",
    "Highest": 0,
    "High": 0,
-   "Medium": 15,
-   "Low": 1,
+   "Medium": 16,
+   "Low": 0,
    "Lowest": 0
   },
   {
@@ -989,6 +1005,14 @@ a{color:var(--accent)}
    "Medium": 16,
    "Low": 0,
    "Lowest": 0
+  },
+  {
+   "week": "2026-W43",
+   "Highest": 0,
+   "High": 0,
+   "Medium": 1,
+   "Low": 0,
+   "Lowest": 0
   }
  ],
  "impact_matrix": {
@@ -1005,11 +1029,11 @@ a{color:var(--accent)}
     "cellen": [
      1,
      1,
-     45,
+     46,
      0,
      0
     ],
-    "totaal": 47
+    "totaal": 48
    },
    {
     "impact": "Hindered, workaround available",
@@ -1027,8 +1051,8 @@ a{color:var(--accent)}
     "cellen": [
      0,
      0,
-     40,
-     2,
+     41,
+     1,
      0
     ],
     "totaal": 42
@@ -1047,13 +1071,13 @@ a{color:var(--accent)}
   ]
  },
  "status": {
-  "Pending bugfix": 9,
-  "Pending customer": 4,
-  "To Do": 4,
-  "In Progress": 3
+  "Pending bugfix": 7,
+  "In Progress": 4,
+  "Pending customer": 3,
+  "To Do": 3
  },
  "resolutie": {
-  "Done": 162,
+  "Done": 166,
   "Cannot Reproduce": 30,
   "Won't Do": 5,
   "Duplicate": 2
@@ -1063,11 +1087,11 @@ a{color:var(--accent)}
   "Niet ingevuld": 28,
   "I have a question": 23,
   "I want to request a new feature": 18,
-  "I cannot access something": 14,
+  "I cannot access something": 15,
   "I want to request a new feature , Something is wrong in a system": 1
  },
  "afdeling": {
-  "Customer Service": 138,
+  "Customer Service": 139,
   "IT": 23,
   "Planning": 20,
   "Field Services": 11,
@@ -1084,7 +1108,7 @@ a{color:var(--accent)}
   "baoying": 17,
   "emma": 14,
   "nora": 14,
-  "kosta": 9,
+  "kosta": 10,
   "caroline": 9,
   "ruwan": 8,
   "iris": 8,
@@ -1115,27 +1139,11 @@ a{color:var(--accent)}
  },
  "open_tickets": [
   {
-   "key": "IT-97",
-   "summary": "Geen threadcode RT",
-   "status": "Pending bugfix",
-   "categorie": "BrightRiver",
-   "leeftijd_dagen": 52,
-   "afdeling": "Customer Service"
-  },
-  {
-   "key": "IT-99",
-   "summary": "geen BOG vermeldling bij Floorplanner RT ticket",
-   "status": "Pending bugfix",
-   "categorie": "Floorplanner",
-   "leeftijd_dagen": 52,
-   "afdeling": "Customer Service"
-  },
-  {
    "key": "IT-131",
    "summary": "1677346- meetrapport revisie push werkt niet",
    "status": "Pending bugfix",
    "categorie": "Revision",
-   "leeftijd_dagen": 44,
+   "leeftijd_dagen": 48,
    "afdeling": "Customer Service"
   },
   {
@@ -1143,7 +1151,7 @@ a{color:var(--accent)}
    "summary": "mailing 'access denied'",
    "status": "Pending bugfix",
    "categorie": "Notifications & E-mails",
-   "leeftijd_dagen": 37,
+   "leeftijd_dagen": 41,
    "afdeling": "Customer Service"
   },
   {
@@ -1151,7 +1159,7 @@ a{color:var(--accent)}
    "summary": "Teer Makelaars: Ze zien product Makelaarspresentatie aan de rechtse kant staan in Stap 2. Terwijl ze het pakket Teer met Makelaar al besteld hebben.",
    "status": "Pending bugfix",
    "categorie": "Pricelist",
-   "leeftijd_dagen": 27,
+   "leeftijd_dagen": 31,
    "afdeling": "Customer Service"
   },
   {
@@ -1159,7 +1167,7 @@ a{color:var(--accent)}
    "summary": "Extra product in pakket (video)",
    "status": "Pending bugfix",
    "categorie": "Zibber Zone",
-   "leeftijd_dagen": 25,
+   "leeftijd_dagen": 28,
    "afdeling": "Customer Service"
   },
   {
@@ -1167,7 +1175,7 @@ a{color:var(--accent)}
    "summary": "Verkeerde (onverklaarbare) prijzen bij stap 2 en stap 4",
    "status": "Pending bugfix",
    "categorie": "Pricelist",
-   "leeftijd_dagen": 24,
+   "leeftijd_dagen": 27,
    "afdeling": "Sales"
   },
   {
@@ -1175,7 +1183,7 @@ a{color:var(--accent)}
    "summary": "1680602-terugkomafspraak nodig doorspushen",
    "status": "Pending bugfix",
    "categorie": "Other - Products",
-   "leeftijd_dagen": 24,
+   "leeftijd_dagen": 27,
    "afdeling": "Customer Service"
   },
   {
@@ -1183,7 +1191,7 @@ a{color:var(--accent)}
    "summary": "360 komt niet door bij funda",
    "status": "Pending bugfix",
    "categorie": "Funda",
-   "leeftijd_dagen": 15,
+   "leeftijd_dagen": 19,
    "afdeling": "Customer Service"
   },
   {
@@ -1191,7 +1199,7 @@ a{color:var(--accent)}
    "summary": "Repair bonus -> extra reden/regel bij de return opties toevoegen. 'Other'",
    "status": "Pending customer",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 6,
+   "leeftijd_dagen": 10,
    "afdeling": "Team Manager Belgium"
   },
   {
@@ -1199,7 +1207,7 @@ a{color:var(--accent)}
    "summary": "Matterport",
    "status": "To Do",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 3,
+   "leeftijd_dagen": 6,
    "afdeling": "Customer Service"
   },
   {
@@ -1207,7 +1215,7 @@ a{color:var(--accent)}
    "summary": "Support tickets OBI",
    "status": "To Do",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 2,
+   "leeftijd_dagen": 6,
    "afdeling": "IT"
   },
   {
@@ -1215,7 +1223,7 @@ a{color:var(--accent)}
    "summary": "Support tickets DEV ",
    "status": "To Do",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 2,
+   "leeftijd_dagen": 6,
    "afdeling": "IT"
   },
   {
@@ -1223,7 +1231,7 @@ a{color:var(--accent)}
    "summary": "Revisies-MRP en Plattegronden",
    "status": "Pending customer",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 2,
+   "leeftijd_dagen": 5,
    "afdeling": "Customer Service"
   },
   {
@@ -1231,7 +1239,7 @@ a{color:var(--accent)}
    "summary": "Kortingscode add-on",
    "status": "Pending customer",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 2,
+   "leeftijd_dagen": 5,
    "afdeling": "Nog te mappen"
   },
   {
@@ -1239,23 +1247,15 @@ a{color:var(--accent)}
    "summary": "360 URL niet zichtbaar in het consumenten dashboard",
    "status": "In Progress",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 1,
-   "afdeling": "Customer Service"
-  },
-  {
-   "key": "IT-228",
-   "summary": "1691052 Floorplanner ",
-   "status": "Pending customer",
-   "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 1,
+   "leeftijd_dagen": 5,
    "afdeling": "Customer Service"
   },
   {
    "key": "IT-230",
    "summary": "Repair mails niet uitgestuurd",
-   "status": "To Do",
+   "status": "In Progress",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 0,
+   "leeftijd_dagen": 3,
    "afdeling": "Team Manager Belgium"
   },
   {
@@ -1263,7 +1263,7 @@ a{color:var(--accent)}
    "summary": "Foutmelding video ",
    "status": "In Progress",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 0,
+   "leeftijd_dagen": 3,
    "afdeling": "Sales"
   },
   {
@@ -1271,7 +1271,7 @@ a{color:var(--accent)}
    "summary": "Teer opties aanpassen. Add-on social media reel (zonder makelaarspresentatie) toevoegen als add-on optie",
    "status": "In Progress",
    "categorie": "Niet geclassificeerd",
-   "leeftijd_dagen": 0,
+   "leeftijd_dagen": 3,
    "afdeling": "Customer Service"
   }
  ],
@@ -1279,32 +1279,32 @@ a{color:var(--accent)}
   "categorie": {
    "vanaf": "2026-W29",
    "gevuld": 195,
-   "van": 219
+   "van": 220
   },
   "impact": {
    "vanaf": "2026-W30",
-   "gevuld": 181,
-   "van": 219
+   "gevuld": 182,
+   "van": 220
   },
   "markt": {
    "vanaf": "2026-W38",
-   "gevuld": 65,
-   "van": 219
+   "gevuld": 66,
+   "van": 220
   },
   "frequentie": {
    "vanaf": "2026-W38",
-   "gevuld": 64,
-   "van": 219
+   "gevuld": 65,
+   "van": 220
   },
   "systeem_melder": {
    "vanaf": "2026-W38",
-   "gevuld": 65,
-   "van": 219
+   "gevuld": 66,
+   "van": 220
   },
   "referentie": {
    "vanaf": "2026-W38",
-   "gevuld": 51,
-   "van": 219
+   "gevuld": 52,
+   "van": 220
   }
  },
  "tickets": [
@@ -3692,11 +3692,11 @@ a{color:var(--accent)}
    "key": "IT-97",
    "summary": "Geen threadcode RT",
    "created": "2026-08-24T14:42:00",
-   "resolved": null,
+   "resolved": "2026-10-19T11:13:00",
    "week": "2026-W35",
-   "status": "Pending bugfix",
-   "status_categorie": "In Progress",
-   "resolutie": null,
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
    "prioriteit": "Medium",
    "type_verzoek": "Something is wrong in a system",
    "categorie": "BrightRiver",
@@ -3711,11 +3711,10 @@ a{color:var(--accent)}
    "melder_ruw": "baoying",
    "melder": "baoying",
    "meerdere_melders": false,
-   "doorlooptijd_klok_u": null,
-   "doorlooptijd_werk_u": null,
+   "doorlooptijd_klok_u": 1340.52,
+   "doorlooptijd_werk_u": 396.52,
    "eerste_reactie_werk_u": null,
-   "periode": "P2",
-   "leeftijd_dagen": 52
+   "periode": "P2"
   },
   {
    "key": "IT-98",
@@ -3749,11 +3748,11 @@ a{color:var(--accent)}
    "key": "IT-99",
    "summary": "geen BOG vermeldling bij Floorplanner RT ticket",
    "created": "2026-08-24T16:33:00",
-   "resolved": null,
+   "resolved": "2026-10-19T08:44:00",
    "week": "2026-W35",
-   "status": "Pending bugfix",
-   "status_categorie": "In Progress",
-   "resolutie": null,
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
    "prioriteit": "Medium",
    "type_verzoek": "Something is wrong in a system",
    "categorie": "Floorplanner",
@@ -3768,11 +3767,10 @@ a{color:var(--accent)}
    "melder_ruw": "baoying",
    "melder": "baoying",
    "meerdere_melders": false,
-   "doorlooptijd_klok_u": null,
-   "doorlooptijd_werk_u": null,
+   "doorlooptijd_klok_u": 1336.18,
+   "doorlooptijd_werk_u": 392.18,
    "eerste_reactie_werk_u": null,
-   "periode": "P2",
-   "leeftijd_dagen": 52
+   "periode": "P2"
   },
   {
    "key": "IT-100",
@@ -4641,7 +4639,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P2",
-   "leeftijd_dagen": 44
+   "leeftijd_dagen": 48
   },
   {
    "key": "IT-132",
@@ -5072,7 +5070,7 @@ a{color:var(--accent)}
    "status": "Pending bugfix",
    "status_categorie": "In Progress",
    "resolutie": null,
-   "prioriteit": "Low",
+   "prioriteit": "Medium",
    "type_verzoek": "Something is wrong in a system",
    "categorie": "Notifications & E-mails",
    "systeem_melder": null,
@@ -5090,7 +5088,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 37
+   "leeftijd_dagen": 41
   },
   {
    "key": "IT-148",
@@ -6043,7 +6041,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 27
+   "leeftijd_dagen": 31
   },
   {
    "key": "IT-183",
@@ -6184,7 +6182,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 25
+   "leeftijd_dagen": 28
   },
   {
    "key": "IT-188",
@@ -6241,7 +6239,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 24
+   "leeftijd_dagen": 27
   },
   {
    "key": "IT-190",
@@ -6298,7 +6296,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 24
+   "leeftijd_dagen": 27
   },
   {
    "key": "IT-192",
@@ -6719,7 +6717,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P3",
-   "leeftijd_dagen": 15
+   "leeftijd_dagen": 19
   },
   {
    "key": "IT-207",
@@ -6972,7 +6970,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 6
+   "leeftijd_dagen": 10
   },
   {
    "key": "IT-216",
@@ -7057,7 +7055,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 3
+   "leeftijd_dagen": 6
   },
   {
    "key": "IT-219",
@@ -7142,7 +7140,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 2
+   "leeftijd_dagen": 6
   },
   {
    "key": "IT-222",
@@ -7171,7 +7169,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 2
+   "leeftijd_dagen": 6
   },
   {
    "key": "IT-223",
@@ -7200,7 +7198,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 2
+   "leeftijd_dagen": 5
   },
   {
    "key": "IT-224",
@@ -7229,7 +7227,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 2
+   "leeftijd_dagen": 5
   },
   {
    "key": "IT-225",
@@ -7286,7 +7284,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 1
+   "leeftijd_dagen": 5
   },
   {
    "key": "IT-227",
@@ -7320,11 +7318,11 @@ a{color:var(--accent)}
    "key": "IT-228",
    "summary": "1691052 Floorplanner ",
    "created": "2026-10-14T16:09:00",
-   "resolved": null,
+   "resolved": "2026-10-19T11:58:00",
    "week": "2026-W42",
-   "status": "Pending customer",
-   "status_categorie": "In Progress",
-   "resolutie": null,
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
    "prioriteit": "Medium",
    "type_verzoek": "Something is wrong in a system",
    "categorie": "Niet geclassificeerd",
@@ -7339,11 +7337,10 @@ a{color:var(--accent)}
    "melder_ruw": "baoying",
    "melder": "baoying",
    "meerdere_melders": false,
-   "doorlooptijd_klok_u": null,
-   "doorlooptijd_werk_u": null,
+   "doorlooptijd_klok_u": 115.82,
+   "doorlooptijd_werk_u": 25.82,
    "eerste_reactie_werk_u": null,
-   "periode": "P4",
-   "leeftijd_dagen": 1
+   "periode": "P4"
   },
   {
    "key": "IT-229",
@@ -7379,8 +7376,8 @@ a{color:var(--accent)}
    "created": "2026-10-15T16:03:00",
    "resolved": null,
    "week": "2026-W42",
-   "status": "To Do",
-   "status_categorie": "To Do",
+   "status": "In Progress",
+   "status_categorie": "In Progress",
    "resolutie": null,
    "prioriteit": "Medium",
    "type_verzoek": "Something is wrong in a system",
@@ -7390,7 +7387,7 @@ a{color:var(--accent)}
    "frequentie": "First time I see this",
    "markt": "Not applicable",
    "referentie": "1680968, 1682091, 168263, 1677457, 1679419",
-   "behandelaar": null,
+   "behandelaar": "Eva van de Laar",
    "account": "Kim Nijs",
    "afdeling": "Team Manager Belgium",
    "melder_ruw": "Kim",
@@ -7400,7 +7397,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 0
+   "leeftijd_dagen": 3
   },
   {
    "key": "IT-231",
@@ -7429,7 +7426,7 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 0
+   "leeftijd_dagen": 3
   },
   {
    "key": "IT-232",
@@ -7458,7 +7455,35 @@ a{color:var(--accent)}
    "doorlooptijd_werk_u": null,
    "eerste_reactie_werk_u": null,
    "periode": "P4",
-   "leeftijd_dagen": 0
+   "leeftijd_dagen": 3
+  },
+  {
+   "key": "IT-233",
+   "summary": "Client portal error - My Zibber",
+   "created": "2026-10-19T14:45:00",
+   "resolved": "2026-10-19T16:35:00",
+   "week": "2026-W43",
+   "status": "Done",
+   "status_categorie": "Done",
+   "resolutie": "Done",
+   "prioriteit": "Medium",
+   "type_verzoek": "I cannot access something",
+   "categorie": "Niet geclassificeerd",
+   "systeem_melder": "My Zibber",
+   "impact": "Blocked, I can't proceed",
+   "frequentie": "First time I see this",
+   "markt": "Germany",
+   "referentie": "von poll immobilien shop",
+   "behandelaar": "Eva van de Laar",
+   "account": "Support Zibber NL",
+   "afdeling": "Customer Service",
+   "melder_ruw": "Kosta",
+   "melder": "kosta",
+   "meerdere_melders": false,
+   "doorlooptijd_klok_u": 1.83,
+   "doorlooptijd_werk_u": 1.83,
+   "eerste_reactie_werk_u": null,
+   "periode": "P4"
   }
  ]
 }</script>
